@@ -1,8 +1,9 @@
 # 🏁 Flutter Monorepo Starter Template
 
-Welcome to the **Flutter Modular Monorepo**!  
-This repository is structured to support **scalable**, **maintainable**, and **testable** Flutter applications using Clean Architecture principles and modularization best practices using flutter [workspace](https://dart.dev/tools/pub/workspaces) and [melos](https://github.com/invertase/melos).
+Welcome to the **Flutter Modular Monorepo**!
+This repository is structured to support **scalable**, **maintainable**, and **testable** Flutter applications using Clean Architecture principles and modularization best practices using Flutter [workspaces](https://dart.dev/tools/pub/workspaces) and [Melos](https://github.com/invertase/melos).
 
+> 📘 **Note:** Each package/module in this repository comes with its own documentation to help you understand its purpose, usage, and integration. Refer to each package’s `README.md` or inline comments for details.
 ---
 
 ## Specification
@@ -22,17 +23,17 @@ dev_dependencies:
 
 ```
 FLUTTER-MONOREPOS-STARTER/
-├── app/                 # Main app implementation (e.g., customer app)
-├── config/              # Environment & config generators (e.g., Envied)
-├── core/                # Core feature modules (decoupled logic)
-│   ├── design_system/     # Shared UI components, themes, tokens
-│   ├── localization/      # App internationalization (e.g., intl)
-│   ├── network/           # API layer (client, interceptor, service)
-│   └── utilities/         # General helpers, extensions, utils
-├── packages/
-│   └── shared/            # Re-exports global dependencies (e.g., get_it)
-├── pubspec.yaml           # Workspace config via Melos
-└── README.md              # Starter template documentation
+├── app/                 # Main Flutter application entry
+├── config/              # Configuration and environment setup
+├── core/                # Core reusable features
+│   ├── design_system/     # UI design system (widgets, themes, tokens)
+│   ├── localization/      # Internationalization support
+│   ├── network/           # API client abstraction layer
+│   └── utilities/         # Helpers, extensions, general-purpose utils
+├── packages/            # (Reserved for additional packages)
+├── shared/              # Shared dependencies re-export (e.g. get_it)
+├── pubspec.yaml         # Workspace + melos config
+├── README.md            # Project documentation
 ```
 
 ---
@@ -165,7 +166,9 @@ melos run build_runner
 ```
 
 ---
-## Package Folder recomendation
+## Package Folder recomendation stucture
+
+
 ### 📦 Structure A – Layer-Oriented (Global Layers)
 
 ```plaintext
