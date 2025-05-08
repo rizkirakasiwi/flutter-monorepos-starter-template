@@ -48,7 +48,6 @@ app.*.map.json
 /android/app/release
 
 # Generated File
-*.g.dart
 *.gr.dart
 *.config.dart
 
