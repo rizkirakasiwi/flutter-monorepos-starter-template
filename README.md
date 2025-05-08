@@ -165,7 +165,7 @@ melos run build_runner
 ```
 
 ---
-## Package Folder recomendation
+## Package Folder Structure Recomendation
 ### 📦 Structure A – Layer-Oriented (Global Layers)
 
 ```plaintext
